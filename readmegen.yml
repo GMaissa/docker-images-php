@@ -1,0 +1,16 @@
+vcs: git
+format: md
+issue_tracker_pattern:
+break: "## Changelog"
+output_file_name: "CHANGELOG.md"
+message_groups:
+  Features:
+    - feat
+  Bugfixes:
+    - fix
+  Documentation:
+    - doc
+  Testing:
+    - test
+  Refactoring:
+    - refactor
