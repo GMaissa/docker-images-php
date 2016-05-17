@@ -70,4 +70,8 @@ if [ ! -z ${XDEBUG_ENABLE} ]; then
     . $(dirname $0)/configure-xdebug.sh
 fi
 
+if [ ! -z ${BLACKFIRE_ENABLE} ]; then
+    . $(dirname $0)/configure-blackfire.sh
+fi
+
 exec "$@"
