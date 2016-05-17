@@ -58,5 +58,7 @@ Variable                  | Description
 `XDEBUG_ENABLE`           | Enable xdebug (will install module)
 `XDEBUG_REMOTE_HOST`      | XDebug remote host configuration (will be configured if XDebug is enabled
 `XDEBUG_REMOTE_PORT`      | XDebug remote port configuration (will be configured if XDebug is enabled
+`BLACKFIRE_ENABLE`        | Enable Blackfire probe (will install module)
+`BLACKFIRE_AGENT_HOST`    | Blackfire agent host (default is blackfire:8707)
 
 

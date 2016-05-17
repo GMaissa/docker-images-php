@@ -10,11 +10,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get clean && \
     rm -rf /tmp/* /var/tmp/*
 
-# Redirect Apache access and error logs to standard and error output
+# Disable Apache autostart and enable common modules
 RUN sudo update-rc.d apache2 disable && \
-    a2enmod rewrite headers expires && \
-    rm /var/log/apache2/error.log && \
-    ln -s /dev/stderr /var/log/apache2/error.log
+    a2enmod rewrite headers expires
 
 # Declaring volumes to be mounted
 VOLUME /var/www/project
